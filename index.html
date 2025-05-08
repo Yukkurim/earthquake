@@ -14,11 +14,12 @@
       margin: 0;
       padding: 0;
       height: 100%;
-      overflow: hidden;
+      overflow: auto;
       font-family: Arial, sans-serif;
     }
     #map {
-      height: 75%;
+      height: 75vh; /* 地図の高さを調整 */
+      width: 100%;
     }
     #settings, #earthquake-history {
       background: #f7f7f7;
@@ -33,6 +34,7 @@
     #earthquake-history ul {
       list-style-type: none;
       padding: 0;
+      margin: 0;
     }
     #earthquake-history li {
       margin-bottom: 10px;
@@ -69,5 +71,8 @@
 
   <!-- スクリプト -->
   <script src="script.js"></script>
+</body>
+</html>
+
 </body>
 </html>
