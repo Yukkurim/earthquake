@@ -2,12 +2,11 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: auto;
   font-family: Arial, sans-serif;
 }
 
 #map {
-  height: 75vh; /* 地図の高さを調整 */
+  height: 70vh; /* 地図の高さを調整 */
   width: 100%;
 }
 
@@ -44,4 +43,13 @@ button {
 
 button:hover {
   background-color: #45a049;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  overflow: auto;
 }
