@@ -1,4 +1,3 @@
-
 // 地震情報の取得
 function fetchEarthquakeData() {
   fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson')
@@ -12,7 +11,7 @@ function fetchEarthquakeData() {
       const updated = earthquake.properties.updated;
 
       // 地図にマーカーを追加
-      const map = L.map('map').setView([lat, lon], 5);
+      const map = L.map('map').setView([35.6762, 139.6503], 5); // 日本（東京）の緯度・経度に設定
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       }).addTo(map);
