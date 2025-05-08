@@ -1,0 +1,46 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+#map {
+  height: 75%;
+}
+
+#settings, #earthquake-history {
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#settings input {
+  margin-left: 10px;
+}
+
+#earthquake-history ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#earthquake-history li {
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
