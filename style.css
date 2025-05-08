@@ -6,9 +6,10 @@ html, body {
 }
 
 #map {
-  height: 70vh; /* 地図の高さを調整 */
+  height: 100vh;
   width: 100%;
 }
+
 
 #settings, #earthquake-history {
   background: #f7f7f7;
