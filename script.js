@@ -10,6 +10,11 @@ function fetchEarthquakeData() {
       const title = earthquake.properties.title;
       const updated = earthquake.properties.updated;
 
+setTimeout(() => {
+  map.invalidateSize();
+}, 100);
+
+
       // 地図にマーカーを追加
       const map = L.map('map').setView([35.6762, 139.6503], 5); // 日本（東京）の緯度・経度に設定
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
